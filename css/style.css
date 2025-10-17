@@ -8429,7 +8429,7 @@ h1, h2, h3, h4, h5,
       height: 600px; }
 
 .slider-text h1 {
-  font-size: 50px;
+  font-size: 40px;
   color: #fff;
   line-height: 1.2;
   font-weight: 700; }
@@ -8438,7 +8438,7 @@ h1, h2, h3, h4, h5,
       font-size: 40px; } }
 
 .slider-text p {
-  font-size: 20px;
+  font-size: 18px;
   line-height: 1.5;
   font-weight: 300;
   color: rgba(255, 255, 255, 0.8); }
@@ -9839,3 +9839,66 @@ textarea.form-control {
   100% {
     stroke-dasharray: 89, 200;
     stroke-dashoffset: -136px; } }
+/* ====== Fix Box Alignment (Equal Height & Width) ====== */
+.services-section .row.d-flex.no-gutters {
+  gap: 20px 0; /* spacing between rows */
+}
+
+.services-section .col-md-3 {
+  display: flex;
+  align-items: stretch;
+}
+
+.services-section .services {
+  background: #2f47ff;
+  color: #fff;
+  text-align: center;
+  border-radius: 10px;
+  padding: 30px 15px;
+  flex: 1;
+  width: 100%;
+  height: 100%;
+  transition: all 0.3s ease;
+  box-shadow: 0 5px 15px rgba(0,0,0,0.1);
+}
+
+.services-section .services:hover {
+  /*background: #1d2fd6;*/
+  transform: translateY(-5px);
+}
+
+.services-section .services .icon {
+  font-size: 40px;
+  margin-bottom: 15px;
+}
+
+.services-section .services h3 {
+  font-size: 18px;
+  font-weight: 600;
+  margin-bottom: 10px;
+}
+
+.services-section .services p {
+  font-size: 14px;
+  margin: 0;
+  opacity: 0.9;
+}
+
+/* Make all boxes same height regardless of text */
+.services-section .row {
+  display: flex;
+  flex-wrap: wrap;
+}
+
+.services-section .col-md-3 {
+  display: flex;
+  flex-direction: column;
+}
+
+.services-section .media.block-6 {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  height: 100%;
+}
+|
